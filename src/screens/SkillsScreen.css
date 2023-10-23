@@ -1,0 +1,76 @@
+.SkillsScreen {
+    height: 80vh;
+    position: relative;
+}
+
+.SkillsScreen h1 {
+    font-size: 11rem;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translateY(-10%);
+    color: rgb(238, 238, 238);
+    transition: transform 0.5s ease-out 0s;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.SkillsScreen h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    margin-left: 5rem;
+    width: 70%;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.skills_container {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.skills {
+    display: flex;
+    flex-flow: column;
+    gap: 5rem;
+}
+
+.skill ul {
+    list-style-type: none;
+    gap: .5rem;
+    display: flex;
+    flex-flow: column;
+}
+
+.skill ul li {
+    font-size: 1.7rem;
+    position: relative;
+    width: fit-content;
+}
+
+.skill ul li::after {
+    content: "";
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgb(34, 34, 34);
+    animation: test 1s linear;
+}
+
+
+@keyframes her {
+    100%{
+
+    }
+    0%{
+
+    }
+}

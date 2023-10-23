@@ -1,0 +1,55 @@
+.cursor {
+  background-color: #111;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.AboutScreen {
+  height: 100vh;
+  position: relative;
+}
+
+.AboutScreen h1 {
+  font-size: 11rem;
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  transform: translateY(-10%);
+  color: rgb(238, 238, 238);
+  transition: transform 0.5s ease-out 0s;
+  overflow: hidden;
+}
+
+.AboutScreen h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 5rem;
+  width: 70%;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0
+  }
+
+  100% {
+    width: 100%;
+  }
+
+}

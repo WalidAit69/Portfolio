@@ -1,0 +1,36 @@
+.ContactScreen {
+    height: 80vh;
+    position: relative;
+}
+
+.ContactScreen h1 {
+    font-size: 11rem;
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    transform: translateY(-10%);
+    color: rgb(238, 238, 238);
+    transition: transform 0.5s ease-out 0s;
+    overflow: hidden;
+}
+
+.ContactScreen .socials {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    margin-left: 5rem;
+    width: 70%;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.ContactScreen .socials div {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.socials img {
+    width: 80px;
+}

@@ -1,0 +1,166 @@
+.Projects_page ul {
+    list-style: none;
+}
+
+.Projects_page img {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.border-bottom {
+    position: absolute;
+    top: 100px;
+    width: 0%;
+    z-index: 1;
+    border-color: rgba(255, 255, 255, .2);
+    border-width: .5px;
+}
+
+.text {
+    position: absolute;
+    top: 420px;
+    left: 450px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+}
+
+.subtitle::before {
+    display: inline-block;
+    content: "";
+    border: 1px solid #fff;
+    width: 80px;
+    margin: 0 10px 0 0;
+    transform: translateY(-4px);
+}
+
+.foodwine .subtitle::before {
+    display: inline-block;
+    content: "";
+    border: 1px solid #000;
+    width: 80px;
+    margin: 0 10px 0 0;
+    transform: translateY(-4px);
+}
+
+.bulletintitle {
+    color: red;
+    font-size: 120px;
+    text-transform: uppercase;
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.roomsytitle {
+    color: orange;
+    font-size: 120px;
+    text-transform: uppercase;
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.foodwinetitle{
+    color: black;
+    font-size: 120px;
+    text-transform: uppercase;
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.desc {
+    color: rgba(255, 255, 255, .5);
+    margin-top: 40px;
+    line-height: 2;
+    max-width: 600px;
+}
+
+.readmore {
+    display: inline-block;
+    margin-top: 80px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    font-weight: bolder;
+}
+
+.img-1 {
+    position: absolute;
+    top: 300px;
+    right: 320px;
+    transform: translateY(-50%);
+    background: url('./img/img-1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    background-color: white;
+}
+
+.img-2 {
+    position: absolute;
+    top: 320px;
+    right: 0;
+    transform: translateY(-50%);
+    background: url('./img/img-2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.img-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url('./img/img-3.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    background-color: #fff;
+}
+
+
+@media(max-height: 720px) {
+    .text {
+        top: 360px;
+        left: 360px;
+    }
+
+    .title {
+        font-size: 100px;
+    }
+
+    .desc {
+        margin-top: 30px;
+    }
+
+    .readmore {
+        margin-top: 60px;
+    }
+
+    .img-1 {
+        top: 240px;
+        right: 330px;
+        height: 480px;
+    }
+
+    .img-2 {
+        top: 270px;
+        height: 280px;
+    }
+
+    .img-3 {
+        top: 740px;
+    }
+}

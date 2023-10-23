@@ -1,0 +1,354 @@
+.Projects_Page {
+    height: 210vh;
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin: 0 auto;
+}
+
+.Projects_Page_roomsy {
+    color: rgb(208, 80, 34);
+}
+
+.Projects_Page_bulettin {
+    color: red;
+}
+
+
+.Projects_Page .layer1 {
+    position: absolute;
+    background-color: rgb(208, 80, 34);
+    width: 100%;
+    height: 420vh;
+    left: 0;
+    mix-blend-mode: color;
+    animation: expand 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.Projects_Page .layer1clicked {
+    position: absolute;
+    background-color: rgb(208, 80, 34);
+    width: 100%;
+    height: 420vh;
+    left: 0;
+    top: 0;
+    mix-blend-mode: normal;
+    animation: expand2 1s cubic-bezier(0.19, 1, 0.22, 1) forwards ;
+}
+
+.Projects_Page .layer2 {
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 420vh;
+    left: 0;
+    mix-blend-mode: color;
+    animation: expand 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.Projects_Page .layer2clicked {
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 420vh;
+    right: 0;
+    mix-blend-mode: normal;
+    animation: expand2 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.Projects_Page .layer3 {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 420vh;
+    left: 0;
+    mix-blend-mode: color;
+    animation: expand 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.Projects_Page .layer3clicked {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 420vh;
+    right: 0;
+    mix-blend-mode: normal;
+    animation: expand2 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.left {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+.left div {
+    position: relative;
+}
+
+.left h4 {
+    padding: 5%;
+    font-size: 2rem;
+    width: fit-content;
+    position: relative;
+}
+
+.left h4::after {
+    content: "";
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgb(34, 34, 34);
+    animation: test 1s linear;
+    animation-delay: .15s;
+}
+
+
+.left .project_info {
+    display: flex;
+    flex-flow: column;
+    padding: 10%;
+    height: 100%;
+    gap: .7rem;
+    position: relative;
+}
+
+.left .project_info h1 {
+    font-size: 4rem;
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.left .project_info h1::after {
+    content: "";
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgb(34, 34, 34);
+    animation: test 1s linear;
+    animation-delay: .15s;
+}
+
+.left .project_info h1:hover+.svg {
+    left: 60%;
+    transition: .3s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.left .project_info .foodwine:hover+.svg {
+    left: 90%;
+    transition: .3s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.project_name_arrow {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    transition: .3s;
+}
+
+.left .project_info .svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 40%;
+    transition: .3s;
+    visibility: hidden;
+    z-index: -10;
+    opacity: 0;
+}
+
+
+.left .project_info h2 {
+    display: flex;
+    gap: .3rem;
+    font-size: 2rem;
+    font-weight: 400;
+    position: relative;
+    width: fit-content;
+    max-width: 90%;
+}
+
+.left .project_info h2::after {
+    content: "";
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgb(34, 34, 34);
+    animation: test 1s linear;
+    animation-delay: .15s;
+}
+
+.left .project_info p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: relative;
+    width: 100%;
+}
+
+.left .project_info p::after {
+    content: "";
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgb(34, 34, 34);
+    animation: test 1s linear;
+    animation-delay: .15s;
+}
+
+.left h3 {
+    padding: 5%;
+    position: relative;
+    width: fit-content;
+}
+
+.left h3::after {
+    content: "";
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgb(34, 34, 34);
+    animation: test 1s linear;
+    animation-delay: .15s;
+}
+
+.projects {
+    margin-left: 50%;
+    width: 50%;
+}
+
+.project {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 5rem 0;
+}
+
+
+
+.project .phone2 {
+    position: absolute;
+    bottom: 300px;
+    right: 500px;
+    margin-bottom: 5rem;
+}
+
+
+.project .phone img{
+    width: 350px;
+    height: 700px;
+    position: absolute;
+}
+
+.project .phone2 img{
+    width: 350px;
+    height: 700px;
+    position: absolute;
+}
+
+
+.phone_clicked {
+    opacity: 0;
+}
+
+
+
+@keyframes test {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes test2 {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+
+    100% {
+        color: rgb(51, 51, 51);
+    }
+}
+
+.bulettin_animate {
+    background-color: red;
+}
+
+@keyframes expand {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes expand2 {
+    100% {
+        width: 100%;
+    }
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes overFlow {
+    0% {
+        overflow-y: hidden;
+    }
+
+    50% {
+        overflow-y: hidden;
+    }
+
+    60% {
+        overflow-y: hidden;
+    }
+
+    70% {
+        overflow-y: hidden;
+    }
+
+    80% {
+        overflow-y: hidden;
+    }
+
+    90% {
+        overflow-y: hidden;
+    }
+
+    100% {
+        overflow-y: scroll;
+
+    }
+}

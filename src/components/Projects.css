@@ -1,0 +1,91 @@
+.Projects_page {
+    position: relative;
+}
+
+.Projects_page .roomsy_background {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(208, 80, 34);
+}
+
+.Projects_page .bulletin_background {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
+
+.Projects_page .foodwine_background {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.Projects_page .roomsy_first_layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 33.3333333333vh;
+    width: 0%;
+    background-color: black;
+    animation: entrance 1s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+
+.Projects_page .roomsy_second_layer {
+    position: absolute;
+    top: 33.3333333333%;
+    right: 0;
+    height: 33.3333333333vh;
+    width: 0%;
+    background-color: black;
+    animation: entrance 1s cubic-bezier(.74, .06, .4, .92) .3s forwards;
+}
+
+.Projects_page .roomsy_third_layer {
+    position: absolute;
+    top: 66.6666666667%;
+    right: 0;
+    height: 33.3333333333vh;
+    width: 0%;
+    background-color: black;
+    animation: entrance 1s cubic-bezier(.74, .06, .4, .92) .6s forwards;
+}
+
+.Projects_page .foodwine_first_layer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 33.3333333333%;
+    width: 0%;
+    background-color: white;
+    animation: entrance 1s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+
+.Projects_page .foodwine_second_layer{
+    position: absolute;
+    top: 33.3333333333%;
+    right: 0;
+    height: 33.3333333333%;
+    width: 0%;
+    background-color: white;
+    animation: entrance 1s cubic-bezier(.74, .06, .4, .92) .3s forwards;
+}
+
+.Projects_page .foodwine_third_layer{
+    position: absolute;
+    top: 66.6666666667%;
+    right: 0;
+    height: 33.3333333333%;
+    width: 0%;
+    background-color: white;
+    animation: entrance 1s cubic-bezier(.74, .06, .4, .92) .6s forwards;
+}
+
+@keyframes entrance {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

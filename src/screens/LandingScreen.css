@@ -1,0 +1,63 @@
+.landing_page {
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+.landing_page div {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+.landing_page h1 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 7rem;
+    letter-spacing: 5px;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: transform 0.5s ease-out 0s;
+    z-index: 0;
+}
+
+.landing_page h2 {
+    color: black;
+    letter-spacing: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: .8;
+    font-size: 3rem;
+    font-weight: 400;
+    transition: transform 0.5s ease-out 0s;
+    z-index: 0;
+}
+
+
+
+.third-block {
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    width: 0%;
+    background-color: black;
+    animation: expandNow 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1.5s;
+    mix-blend-mode: color-burn;
+}
+
+@keyframes expandNow {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 64%;
+    }
+}
