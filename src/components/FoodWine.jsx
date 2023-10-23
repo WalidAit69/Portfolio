@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import "./Projects.css";
 import "./Bulletin.css";
 import { motion, useAnimation } from 'framer-motion';
+import screen1 from "../assets/screenshots/foodwine-screen1.png";
+import screen2 from "../assets/screenshots/foodwine-screen2.png";
+import screen3 from "../assets/screenshots/foodwine-screen3.png";
 
 
 function FoodWine() {
@@ -59,7 +62,7 @@ function FoodWine() {
                     >
                         Roomsy is a streamlined web application dedicated to simplifying the booking process for accommodations. Whether you're looking for a hotel room, vacation rental, or any other lodging, Roomsy offers a user-friendly platform that allows users to search, compare, and book a wide range of options with ease.
                     </motion.p>
-                    <motion.a href="#"
+                    <motion.a href="https://foodwine-v1.vercel.app/" target='_blank'
                         class="readmore foodwinereadmore"
                         style={{ color: "black" , borderBottomColor:"#000"}}
                         initial={{ opacity: 0, x: -20 }}
@@ -73,19 +76,25 @@ function FoodWine() {
                     initial={{ width: 0 }}
                     animate={{ width: "450px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
-                ></motion.div>
+                >
+                    <img src={screen1} alt="" />
+                </motion.div>
 
                 <motion.div
                     class="img-2"
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
-                ></motion.div>
+                >
+                    <img src={screen2} alt="" />
+                </motion.div>
 
                 <motion.div
                     class="img-3"
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
-                ></motion.div>
+                >
+                    <img src={screen3} alt="" />
+                </motion.div>
 
             </div>
 

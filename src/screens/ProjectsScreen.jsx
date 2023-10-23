@@ -6,6 +6,8 @@ import Roomsy1 from "../assets/mockups/Roomsy-Mockup1.png";
 import Roomsy2 from "../assets/mockups/Roomsy-Mockup2.png";
 import Buletin1 from "../assets/mockups/BuletinMockup1.png";
 import Buletin2 from "../assets/mockups/BuletinMockup2.png";
+import foodwine1 from "../assets/mockups/foodwinemockup1.png";
+import foodwine2 from "../assets/mockups/foodwinemockup2.png";
 
 
 function ProjectsScreen({ textEnter, textLeave }) {
@@ -206,10 +208,10 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                     <motion.div className='third_project project'>
                         <div className={`phone ${background ? "phone_clicked" : ""}`}>
-                            <img src={Roomsy1} alt="" />
+                            <img src={foodwine1} alt="" />
                         </div>
                         <div ref={ref3} className={`phone2 ${background ? "phone_clicked" : ""}`}>
-                            <img src={Roomsy1} alt="" />
+                            <img src={foodwine2} alt="" />
                         </div>
                     </motion.div>
 
