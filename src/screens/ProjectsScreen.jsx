@@ -8,6 +8,9 @@ import Buletin1 from "../assets/mockups/BuletinMockup1.png";
 import Buletin2 from "../assets/mockups/BuletinMockup2.png";
 import foodwine1 from "../assets/mockups/foodwinemockup1.png";
 import foodwine2 from "../assets/mockups/foodwinemockup2.png";
+import social1 from "../assets/mockups/SocialMockup1.png";
+import social2 from "../assets/mockups/SocialMockup2.png";
+
 
 
 function ProjectsScreen({ textEnter, textLeave }) {
@@ -143,7 +146,7 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                         </div>
                         <h2>Full-Stack • <span> React js / node js</span></h2>
-                        <p>Bulettin is a dynamic and user-friendly web application designed to serve as a versatile platform for blogging and delivering the latest news.</p>
+                        <p>Buletin is a dynamic and user-friendly web application designed to serve as a versatile platform for blogging and delivering the latest news.</p>
                     </div>
 
                     <h3>Web App</h3>
@@ -161,8 +164,8 @@ function ProjectsScreen({ textEnter, textLeave }) {
                             </svg>
 
                         </div>
-                        <h2>Full-Stack Developer • <span> React js / node js</span></h2>
-                        <p>Web app project to give workplace insights using indoor localisation.</p>
+                        <h2>Full-Stack • <span> React js / node js</span></h2>
+                        <p>FOOD&WINE is a cutting-edge culinary platform that brings together the best of food and wine.</p>
                     </div>
 
                     <h3>Web App</h3>
@@ -180,8 +183,8 @@ function ProjectsScreen({ textEnter, textLeave }) {
                             </svg>
 
                         </div>
-                        <h2>Full-Stack Developer • <span> React js / node js</span></h2>
-                        <p>Web app project to give workplace insights using indoor localisation.</p>
+                        <h2>Full-Stack • <span> React js / node js</span></h2>
+                        <p>social media app is a modern web application that creates a feature-rich and interactive platform for social networking.</p>
                     </div>
 
                     <h3>Web App</h3>
@@ -217,10 +220,10 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                     <motion.div className='third_project project'>
                         <div className={`phone ${background ? "phone_clicked" : ""}`}>
-                            <img src={Roomsy1} alt="" />
+                            <img src={social1} alt="" />
                         </div>
                         <div ref={ref4} className={`phone2 ${background ? "phone_clicked" : ""}`}>
-                            <img src={Roomsy1} alt="" />
+                            <img src={social2} alt="" />
                         </div>
                     </motion.div>
                 </div>

@@ -60,11 +60,10 @@ function FoodWine() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.0, delay: 2.8, ease: 'easeInOut' }}
                     >
-                        Roomsy is a streamlined web application dedicated to simplifying the booking process for accommodations. Whether you're looking for a hotel room, vacation rental, or any other lodging, Roomsy offers a user-friendly platform that allows users to search, compare, and book a wide range of options with ease.
-                    </motion.p>
+                        FOOD&WINE is a cutting-edge culinary platform that brings together the best of food and wine.                    </motion.p>
                     <motion.a href="https://foodwine-v1.vercel.app/" target='_blank'
                         class="readmore foodwinereadmore"
-                        style={{ color: "black" , borderBottomColor:"#000"}}
+                        style={{ color: "black", borderBottomColor: "#000" }}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.0, delay: 2.8, ease: 'easeInOut' }}

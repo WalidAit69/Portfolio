@@ -57,7 +57,7 @@ function BulletinProject() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.0, delay: 2.8, ease: 'easeInOut' }}
                     >
-                        Bulettin is a dynamic and user-friendly web application designed to serve as a versatile platform for blogging and delivering the latest news. <br /> 
+                        Buletin is a dynamic and user-friendly web application designed to serve as a versatile platform for blogging and delivering the latest news. <br /> 
                         It provides an intuitive interface for bloggers and journalists to create and publish content, including articles, opinion pieces, and news updates.
                     </motion.p>
                     <motion.a href="https://buletin-v2.vercel.app/" target='_blank'
