@@ -2,11 +2,9 @@ import React, { useEffect } from 'react';
 import "./Projects.css";
 import "./Bulletin.css";
 import { motion, useAnimation } from 'framer-motion';
-import screen1 from "../assets/screenshots/BuletinScreenshot1.png";
-import screen2 from "../assets/screenshots/BuletinScreenshot2.png";
-import screen3 from "../assets/screenshots/BuletinScreenshot3.png";
 
-function BulletinProject() {
+
+function SocialMedia() {
 
     const controls = useAnimation();
 
@@ -22,7 +20,7 @@ function BulletinProject() {
 
     return (
         <section className='Projects_page'>
-            <div className="bulletin_background"></div>
+            <div className="socialmedia_background"></div>
             <div className="roomsy_first_layer"></div>
             <div className="roomsy_second_layer"></div>
             <div className="roomsy_third_layer"></div>
@@ -44,12 +42,12 @@ function BulletinProject() {
                     >Web App</motion.p>
 
                     <motion.h1
-                        class="bulletintitle"
+                        class="socialmediatitle title"
                         initial={{ width: 0 }}
                         animate={{ width: "100%" }}
                         transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                     >
-                        Bulletin
+                        Social Media
                     </motion.h1>
                     <motion.p
                         class="desc"
@@ -57,15 +55,15 @@ function BulletinProject() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.0, delay: 2.8, ease: 'easeInOut' }}
                     >
-                        Bulettin is a dynamic and user-friendly web application designed to serve as a versatile platform for blogging and delivering the latest news. <br /> 
-                        It provides an intuitive interface for bloggers and journalists to create and publish content, including articles, opinion pieces, and news updates.
+                        social media app is a modern web application that creates a feature-rich and interactive platform for social networking.
                     </motion.p>
-                    <motion.a href="https://buletin-v2.vercel.app/" target='_blank'
-                        class="readmore buletinreadmore"
+                    <motion.a href="#"
+                        class="readmore socialreadmore"
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.0, delay: 2.8, ease: 'easeInOut' }}
                     >Live Demo</motion.a>
+
                 </div>
 
                 <motion.div
@@ -73,25 +71,19 @@ function BulletinProject() {
                     initial={{ width: 0 }}
                     animate={{ width: "450px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
-                >
-                    <img src={screen1} alt="" />
-                </motion.div>
+                ></motion.div>
 
                 <motion.div
                     class="img-2"
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
-                >
-                    <img src={screen2} alt="" />
-                </motion.div>
+                ></motion.div>
 
                 <motion.div
                     class="img-3"
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
-                >
-                    <img src={screen3} alt="" />
-                </motion.div>
+                ></motion.div>
 
             </div>
 
@@ -99,4 +91,4 @@ function BulletinProject() {
     )
 }
 
-export default BulletinProject
+export default SocialMedia

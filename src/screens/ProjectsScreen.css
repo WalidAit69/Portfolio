@@ -17,7 +17,7 @@
 
 .Projects_Page .layer1 {
     position: absolute;
-    background-color: rgb(208, 80, 34);
+    background-color: #fa6933;
     width: 100%;
     height: 420vh;
     left: 0;
@@ -75,6 +75,28 @@
     mix-blend-mode: normal;
     animation: expand2 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
+
+.Projects_Page .layer4 {
+    position: absolute;
+    background-color: #44d62c;
+    width: 100%;
+    height: 820vh;
+    left: 0;
+    mix-blend-mode: color;
+    animation: expand 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.Projects_Page .layer4clicked {
+    position: absolute;
+    background-color: #44d62c;
+    width: 100%;
+    height: 820vh;
+    right: 0;
+    mix-blend-mode: normal;
+    z-index: 999;
+    animation: expand2 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
 
 .left {
     display: flex;
@@ -139,7 +161,7 @@
 }
 
 .left .project_info h1:hover+.svg {
-    left: 60%;
+    left: 70%;
     transition: .3s;
     visibility: visible;
     opacity: 1;
@@ -153,6 +175,12 @@
     opacity: 1;
 }
 
+.left .project_info .socialmedia:hover+.svg {
+    left: 110%;
+    transition: .3s;
+    visibility: visible;
+    opacity: 1;
+}
 
 .project_name_arrow {
     display: flex;

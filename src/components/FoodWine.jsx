@@ -60,7 +60,7 @@ function FoodWine() {
                         Roomsy is a streamlined web application dedicated to simplifying the booking process for accommodations. Whether you're looking for a hotel room, vacation rental, or any other lodging, Roomsy offers a user-friendly platform that allows users to search, compare, and book a wide range of options with ease.
                     </motion.p>
                     <motion.a href="#"
-                        class="readmore"
+                        class="readmore foodwinereadmore"
                         style={{ color: "black" , borderBottomColor:"#000"}}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}

@@ -3,7 +3,10 @@ import "./ProjectsScreen.css";
 import { motion, useAnimation, useInView, useScroll, useTransform } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Roomsy1 from "../assets/mockups/Roomsy-Mockup1.png";
-import Roomsy2 from "../assets/mockups/Roomsy-Mockup1.png";
+import Roomsy2 from "../assets/mockups/Roomsy-Mockup2.png";
+import Buletin1 from "../assets/mockups/BuletinMockup1.png";
+import Buletin2 from "../assets/mockups/BuletinMockup2.png";
+
 
 function ProjectsScreen({ textEnter, textLeave }) {
 
@@ -18,6 +21,9 @@ function ProjectsScreen({ textEnter, textLeave }) {
     const ref3 = useRef(null);
     const isref3Inview = useInView(ref3);
 
+    const ref4 = useRef(null);
+    const isref4Inview = useInView(ref4);
+
     const mainControls = useAnimation();
 
     useEffect(() => {
@@ -30,112 +36,73 @@ function ProjectsScreen({ textEnter, textLeave }) {
         if (isref3Inview) {
             mainControls.start("visible")
         }
+        if (isref4Inview) {
+            mainControls.start("visible")
+        }
 
-    }, [isref1Inview, isref2Inview, isref3Inview])
+    }, [isref1Inview, isref2Inview, isref3Inview, isref4Inview])
 
     const letters = "ABCDEFGHJKLMNOPQRSTUVWXYZ"
     const [randomText1, setRandomText1] = useState("");
     const [randomText2, setRandomText2] = useState("");
     const [randomText3, setRandomText3] = useState("");
-    const [roomsy, setroomsy] = useState("roomsy");
-    const [Buletin, setest] = useState("Buletin");
-    const [FoodWine, setello] = useState("Food&Wine");
+    const [randomText4, setRandomText4] = useState("");
 
     const [background, setbackground] = useState(false);
 
 
-    const handleMouseOver = () => {
+    const randomizeText = (originalText, setRandomText) => {
         let interactions = 0;
         const interval = setInterval(() => {
-            const randomizedText = roomsy
+            const randomizedText = originalText
                 .split("")
                 .map((letter, index) => {
                     if (index < interactions) {
-                        return roomsy[index]
+                        return originalText[index];
                     }
-                    return letters[Math.floor(Math.random() * 26)]
+                    return String.fromCharCode(65 + Math.floor(Math.random() * 26));
                 })
                 .join("");
-            setRandomText1(randomizedText);
+            setRandomText(randomizedText);
 
-            if (interactions >= roomsy.length) clearInterval(interval)
-            interactions = interactions + 1 / 3;
+            if (interactions >= originalText.length) {
+                clearInterval(interval);
+            }
+            interactions += 1 / 3;
         }, 30);
     };
 
-    const handlesecondMouseOver = () => {
-        let interactions = 0;
-        const interval = setInterval(() => {
-            const randomizedText = Buletin
-                .split("")
-                .map((letter, index) => {
-                    if (index < interactions) {
-                        return Buletin[index]
-                    }
-                    return letters[Math.floor(Math.random() * 26)]
-                })
-                .join("");
-            setRandomText2(randomizedText);
-
-            if (interactions >= Buletin.length) clearInterval(interval)
-            interactions = interactions + 1 / 3;
-        }, 30);
-    };
-
-    const handlethirdMouseOver = () => {
-        let interactions = 0;
-        const interval = setInterval(() => {
-            const randomizedText = FoodWine
-                .split("")
-                .map((letter, index) => {
-                    if (index < interactions) {
-                        return FoodWine[index]
-                    }
-                    return letters[Math.floor(Math.random() * 26)]
-                })
-                .join("");
-            setRandomText3(randomizedText);
-
-            if (interactions >= FoodWine.length) clearInterval(interval)
-            interactions = interactions + 1 / 3;
-        }, 30);
-    };
-
-    function handleRoomsyClick() {
+    function handleClick(e) {
         setbackground(true);
         document.body.style.overflowY = 'hidden';
-
-
-        setTimeout(() => {
-            navigate('/projects/Roomsy')
-            document.body.style.overflowY = 'auto';
-        }, 2000)
+        if (e === "Roomsy") {
+            setTimeout(() => {
+                navigate('/projects/Roomsy')
+                document.body.style.overflowY = 'auto';
+            }, 1500)
+        }
+        if (e === "Buletin") {
+            setTimeout(() => {
+                navigate('/projects/Buletin')
+                document.body.style.overflowY = 'auto';
+            }, 1500)
+        }
+        if (e === "Food&Wine") {
+            setTimeout(() => {
+                navigate('/projects/Food&Wine')
+                document.body.style.overflowY = 'auto';
+            }, 1500)
+        }
+        if (e === "socialmedia") {
+            setTimeout(() => {
+                navigate('/projects/socialmedia')
+                document.body.style.overflowY = 'auto';
+            }, 1500)
+        }
     }
 
-    function handleBulletinClick() {
-        setbackground(true);
-        document.body.style.overflowY = 'hidden';
-
-
-        setTimeout(() => {
-            navigate('/projects/Buletin')
-            document.body.style.overflowY = 'auto';
-        }, 2000)
-    }
-
-    function handlefoodandwineClick() {
-        setbackground(true);
-        document.body.style.overflowY = 'hidden';
-
-
-        setTimeout(() => {
-            navigate('/projects/Food&Wine')
-            document.body.style.overflowY = 'auto';
-        }, 2000)
-    }
-
-    const {scrollYProgress} = useScroll();
-    const x = useTransform(scrollYProgress , [0,1] , [0,0]);
+    const { scrollYProgress } = useScroll();
+    const x = useTransform(scrollYProgress, [0, 1], [0, 0]);
 
     return (
         <>
@@ -147,14 +114,14 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                     <div className='project_info'>
                         <div className='project_name_arrow'>
-                            <h1 onClick={handleRoomsyClick} className='project_name' onMouseOver={handleMouseOver} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText1 || roomsy}</h1>
+                            <h1 onClick={(e)=>handleClick("Roomsy")} className='project_name' onMouseOver={() => randomizeText("roomsy", setRandomText1)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText1 || "roomsy"}</h1>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
 
                         </div>
-                        <h2>Full-Stack Developer • <span> React js / node js</span></h2>
-                        <p>Web app project to give workplace insights using indoor localisation.</p>
+                        <h2>Full-Stack • <span> React js / node js</span></h2>
+                        <p>web application dedicated to simplifying the booking process for accommodations.</p>
                     </div>
 
                     <h3>Web App</h3>
@@ -167,7 +134,26 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                     <div className='project_info'>
                         <div className='project_name_arrow'>
-                            <h1 onClick={handleBulletinClick} className='project_name' onMouseOver={handlesecondMouseOver} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText2 || Buletin}</h1>
+                            <h1 onClick={(e)=>handleClick("Buletin")} className='project_name' onMouseOver={() => randomizeText("Buletin", setRandomText2)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText2 || "Buletin"}</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+
+                        </div>
+                        <h2>Full-Stack • <span> React js / node js</span></h2>
+                        <p>Bulettin is a dynamic and user-friendly web application designed to serve as a versatile platform for blogging and delivering the latest news.</p>
+                    </div>
+
+                    <h3>Web App</h3>
+                </motion.div>}
+
+                {isref3Inview && <div className={`layer3 ${background && "layer3clicked"}`}></div>}
+                {isref3Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className='left'>
+                    <h4>03</h4>
+
+                    <div className='project_info'>
+                        <div className='project_name_arrow'>
+                            <h1 onClick={(e)=>handleClick("Food&Wine")} className='project_name foodwine' onMouseOver={() => randomizeText("FoodWine", setRandomText3)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText3 || 'Food&Wine'}</h1>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
@@ -180,13 +166,13 @@ function ProjectsScreen({ textEnter, textLeave }) {
                     <h3>Web App</h3>
                 </motion.div>}
 
-                {isref3Inview && <div className={`layer3 ${background && "layer3clicked"}`}></div>}
-                {isref3Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className='left'>
-                    <h4>03</h4>
+                {isref4Inview && <div className={`layer4 ${background && "layer4clicked"}`}></div>}
+                {isref4Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className='left'>
+                    <h4>04</h4>
 
                     <div className='project_info'>
                         <div className='project_name_arrow'>
-                            <h1 onClick={handlefoodandwineClick} className='project_name foodwine' onMouseOver={handlethirdMouseOver} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText3 || 'Food&Wine'}</h1>
+                            <h1 onClick={(e)=>handleClick("socialmedia")} className='project_name socialmedia' onMouseOver={() => randomizeText("SocialMedia", setRandomText4)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText4 || 'SocialMedia'}</h1>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
@@ -200,7 +186,7 @@ function ProjectsScreen({ textEnter, textLeave }) {
                 </motion.div>}
 
                 <div className='projects'>
-                    <motion.div style={{x}} className='first_project project'>
+                    <motion.div style={{ x }} className='first_project project'>
                         <div ref={ref1} className={`phone ${background ? "phone_clicked" : ""}`}>
                             <img src={Roomsy1} alt="" />
                         </div>
@@ -211,10 +197,10 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                     <motion.div className='second_project project'>
                         <div className={`phone ${background ? "phone_clicked" : ""}`}>
-                            <img src={Roomsy1} alt="" />
+                            <img src={Buletin1} alt="" />
                         </div>
                         <div ref={ref2} className={`phone2 ${background ? "phone_clicked" : ""}`}>
-                            <img src={Roomsy1} alt="" />
+                            <img src={Buletin2} alt="" />
                         </div>
                     </motion.div>
 
@@ -226,6 +212,15 @@ function ProjectsScreen({ textEnter, textLeave }) {
                             <img src={Roomsy1} alt="" />
                         </div>
                     </motion.div>
+
+                    <motion.div className='third_project project'>
+                        <div className={`phone ${background ? "phone_clicked" : ""}`}>
+                            <img src={Roomsy1} alt="" />
+                        </div>
+                        <div ref={ref4} className={`phone2 ${background ? "phone_clicked" : ""}`}>
+                            <img src={Roomsy1} alt="" />
+                        </div>
+                    </motion.div>
                 </div>
 
 
@@ -233,12 +228,6 @@ function ProjectsScreen({ textEnter, textLeave }) {
             </section>
 
             <section className={`Projects_Page ${background ? 'bulettin_animate' : ''}`}>
-
-
-
-
-
-
             </section>
         </>
     )

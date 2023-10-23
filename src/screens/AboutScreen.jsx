@@ -5,7 +5,7 @@ import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
 
 function AboutScreen() {
     const {scrollYProgress} = useScroll();
-    const x = useTransform(scrollYProgress , [0,1] , [100,1000]);
+    const x = useTransform(scrollYProgress , [0,1] , [0,1000]);
 
     return (
         <section className='AboutScreen'>

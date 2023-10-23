@@ -9,7 +9,7 @@
     top: 10%;
     left: -10%;
     transform: translateY(-10%);
-    color: rgb(238, 238, 238);
+    color: rgb(186, 186, 186);
     transition: transform 0.5s ease-out 0s;
     overflow: hidden;
 }

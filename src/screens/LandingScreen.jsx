@@ -13,7 +13,7 @@ function LandingScreen() {
 
             <div className='name'>
                 <motion.h1 initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1 }} >Walid Ait Harma</motion.h1>
-                <motion.h2 initial={{ y: 0, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 1 }}>Full-Stack Developer</motion.h2>
+                <motion.h2 initial={{ y: 0, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 1 }}>Full-Stack Web Developer</motion.h2>
 
             </div>
         </section>

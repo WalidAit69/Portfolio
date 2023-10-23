@@ -59,7 +59,7 @@
 }
 
 .roomsytitle {
-    color: orange;
+    color: #fa6933;
     font-size: 120px;
     text-transform: uppercase;
     width: 0%;
@@ -69,6 +69,15 @@
 
 .foodwinetitle{
     color: black;
+    font-size: 120px;
+    text-transform: uppercase;
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.socialmediatitle{
+    color: #44d62c;
     font-size: 120px;
     text-transform: uppercase;
     width: 0%;
@@ -86,12 +95,58 @@
 .readmore {
     display: inline-block;
     margin-top: 80px;
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
     text-decoration: none;
     text-transform: uppercase;
     padding-bottom: 3px;
     font-weight: bolder;
+    transition: .5s;
+    font-size: 1.3rem;
+}
+
+.socialreadmore:hover{
+    color: white;
+    text-shadow: 
+    0 0 10px #44d62c,
+    0 0 20px #44d62c,
+    0 0 40px #44d62c,
+    0 0 80px #44d62c,
+    0 0 120px #44d62c,
+    0 0 160px #44d62c;
+}
+
+.foodwinereadmore:hover{
+    color: white;
+    text-shadow: 
+    0 0 10px #000,
+    0 0 20px #000,
+    0 0 40px #000,
+    0 0 80px #000,
+    0 0 120px #000,
+    0 0 160px #000;
+}
+
+.buletinreadmore:hover{
+    color: white;
+    text-shadow: 
+    0 0 10px red,
+    0 0 20px red,
+    0 0 40px red,
+    0 0 80px red,
+    0 0 120px red,
+    0 0 160px red;
+}
+
+.roomsyreadmore:hover{
+    color: white;
+    text-shadow: 
+    0 0 10px #f58e68,
+    0 0 20px #f58e68,
+    0 0 40px #f58e68,
+    0 0 80px #f58e68,
+    0 0 120px #f58e68,
+    0 0 160px #f58e68;
 }
 
 .img-1 {
@@ -99,11 +154,7 @@
     top: 300px;
     right: 320px;
     transform: translateY(-50%);
-    background: url('./img/img-1.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 600px;
-    background-color: white;
 }
 
 .img-2 {
@@ -111,24 +162,21 @@
     top: 320px;
     right: 0;
     transform: translateY(-50%);
-    background: url('./img/img-2.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 350px;
     margin-bottom: 30px;
-    background-color: #fff;
 }
 
 .img-3 {
     position: absolute;
     bottom: 0;
     right: 0;
-    background: url('./img/img-3.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 350px;
-    background-color: #fff;
 }
+
+.img-3 img{
+    height: 95%;
+}
+
 
 
 @media(max-height: 720px) {
