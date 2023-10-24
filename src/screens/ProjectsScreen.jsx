@@ -193,10 +193,10 @@ function ProjectsScreen({ textEnter, textLeave }) {
                 <div className='projects'>
                     <motion.div style={{ x }} className='first_project project'>
                         <div className={`phone ${background ? "phone_clicked" : ""}`}>
-                            <img src={Roomsy1} alt="" />
+                            <img src="https://ucarecdn.com/60b9d92d-d530-43cd-bb4d-767a0e97d1d4/-/preview/1000x1000/-/format/auto/-/quality/smart_retina/" alt="" />
                         </div>
                         <div ref={ref1} className={`phone2 ${background ? "phone_clicked" : ""}`}>
-                            <img src={Roomsy2} alt="" />
+                            <img src="https://ucarecdn.com/11b943bf-06b2-4869-9fd9-92bb74a23198/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
                         </div>
                     </motion.div>
 
