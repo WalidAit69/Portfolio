@@ -47,7 +47,8 @@
 @media (max-width:900px) {
     .ContactScreen h1 {
         font-size: 7rem;
-        left: -40%;
+        left: 10%;
+        top: 25%;
     }
 
     .ContactScreen .socials {

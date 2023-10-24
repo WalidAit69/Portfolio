@@ -23,13 +23,29 @@ function SkillsScreen() {
 
     }, [isref1Inview, isref2Inview])
 
+    const [screenWidtth, setscreenWidtth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        function handleresize() {
+            setscreenWidtth(window.innerWidth);
+        }
+        window.addEventListener("resize", handleresize);
+
+
+        return () => {
+            window.removeEventListener("resize", handleresize);
+        }
+
+    }, [window.innerWidth])
+
     const { scrollYProgress } = useScroll();
-    const x = useTransform(scrollYProgress, [.5, 1], [1200, -100]);
+    const x = useTransform(scrollYProgress, [.5, 1], [300, 200]);
 
 
     return (
         <section className='SkillsScreen'>
-            <motion.h1 style={{ x }} >SKILLS</motion.h1>
+            {screenWidtth > 900 ? <motion.h1 style={{ x }} >SKILLS</motion.h1>:
+            <h1>SKILLS</h1>}
             <div className='skills_container'>
 
                 <div className="skills">

@@ -15,9 +15,27 @@ function ContactScreen({textEnter , textLeave}) {
         window.location.href = mailtoLink;
     }
 
+    const [screenWidtth, setscreenWidtth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        function handleresize() {
+            setscreenWidtth(window.innerWidth);
+        }
+        window.addEventListener("resize", handleresize);
+
+
+        return () => {
+            window.removeEventListener("resize", handleresize);
+        }
+
+    }, [window.innerWidth])
+
+    console.log(screenWidtth)
+
     return (
         <section className='ContactScreen'>
-            <motion.h1 style={{ x }} >Cantact</motion.h1>
+            {screenWidtth > 900 ? <motion.h1 style={{ x }} >Cantact</motion.h1>:
+            <h1>Cantact</h1>}
             <div className='socials'>
                 <div>
                     <a onMouseEnter={textEnter} onMouseLeave={textLeave} href='mailto:aitwalid2000@gmail.com' target='_blank'><img src="https://sureshmurali.github.io/mail.6c167f77.svg" alt="Mail" className="sc-kjoXOD NCkNJ" /></a>
