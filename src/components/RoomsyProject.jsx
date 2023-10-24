@@ -35,7 +35,7 @@ function RoomsyProject() {
       ></motion.hr>
 
       <div className="content">
-        <div class="text">
+        <div class="text roomsy-text">
           <motion.p
             class="subtitle"
             initial={{ opacity: 0, x: -20 }}

@@ -35,7 +35,7 @@ function BulletinProject() {
             ></motion.hr>
 
             <div className="content">
-                <div class="text">
+                <div class="text buletin-text">
                     <motion.p
                         class="subtitle"
                         initial={{ opacity: 0, x: -20 }}
@@ -44,7 +44,7 @@ function BulletinProject() {
                     >Web App</motion.p>
 
                     <motion.h1
-                        class="bulletintitle"
+                        class="title bulletintitle"
                         initial={{ width: 0 }}
                         animate={{ width: "100%" }}
                         transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}

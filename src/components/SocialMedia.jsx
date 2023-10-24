@@ -36,7 +36,7 @@ function SocialMedia() {
             ></motion.hr>
 
             <div className="content">
-                <div class="text">
+                <div class="text socialmedia-text">
                     <motion.p
                         class="subtitle"
                         initial={{ opacity: 0, x: -20 }}

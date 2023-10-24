@@ -172,7 +172,7 @@ function ProjectsScreen({ textEnter, textLeave }) {
                 </motion.div>}
 
                 {isref4Inview && <div className={`layer4 ${background && "layer4clicked"}`}></div>}
-                {isref4Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className='left'>
+                {isref4Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className={`left ${background && 'Projects_Page_socialmedia'}`}>
                     <h4>04</h4>
 
                     <div className='project_info'>
