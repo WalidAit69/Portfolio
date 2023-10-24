@@ -344,7 +344,7 @@ body {
 
     .left {
         width: 100%;
-        z-index: 9999;
+        z-index: 2;
     }
 }
 
@@ -359,10 +359,6 @@ body {
         right: 650px;
         z-index: 0;
         opacity: .8;
-    }
-
-    .left {
-        width: 100%;
     }
 
     .allprojects .left h1{
@@ -385,6 +381,38 @@ body {
     }
     .project .phone {
         right: 550px;
+    }
+}
+
+@media (max-width:755px) {
+    .project .phone2 {
+        right: 100px;
+    }
+    .project .phone {
+        right: 320px;
+    }
+
+    .project .phone img {
+        width: 250px;
+        height: 500px;
+    }
+    
+    .project .phone2 img {
+        width: 250px;
+        height: 500px;
+    }
+    .left h4 {
+        font-size: 1.5rem;
+    }
+    .left .project_info h1 {
+        font-size: 2rem;
+    }
+    .left .project_info h2 {
+        font-size: 1.2rem;
+    }
+    .left .project_info p {
+        font-size: 1rem;
+        max-width: 300px;
     }
 }
 
