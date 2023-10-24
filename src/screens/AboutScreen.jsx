@@ -4,6 +4,21 @@ import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
 
 
 function AboutScreen() {
+    const [screenWidtth, setscreenWidtth] = useState(window.innerWidth);
+
+    useEffect(() => {
+       function handleresize() {
+        setscreenWidtth(window.innerWidth);
+      }
+      window.addEventListener("resize", handleresize);
+
+
+      return window.removeEventListener("resize" , handleresize);
+      
+    }, [window.innerWidth])
+
+    console.log(screenWidtth);
+    
     const {scrollYProgress} = useScroll();
     const x = useTransform(scrollYProgress , [0,1] , [0,1000]);
 

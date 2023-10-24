@@ -149,6 +149,14 @@
     0 0 160px #f58e68;
 }
 
+
+.accounts{
+    color: white;
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+}
+
 .img-1 {
     position: absolute;
     top: 300px;

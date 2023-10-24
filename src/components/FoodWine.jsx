@@ -68,6 +68,15 @@ function FoodWine() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.0, delay: 2.8, ease: 'easeInOut' }}
                     >Live Demo</motion.a>
+
+                    <motion.div className='accounts'
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1.0, delay: 3, ease: 'easeInOut' }}>
+                        <h3>Use this demo account to sign in</h3>
+                        <h4>Email : demo@gmail.com</h4>
+                        <h4>Password : demodemo</h4>
+                    </motion.div>
                 </div>
 
                 <motion.div

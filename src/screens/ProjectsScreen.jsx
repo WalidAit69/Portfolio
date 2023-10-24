@@ -111,7 +111,7 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
     return (
         <>
-            <section className={'Projects_Page'}>
+            <section className={'Projects_Page allprojects'}>
 
                 {isref1Inview && <div className={`layer1 ${background && 'layer1clicked'}`}></div>}
                 {isref1Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: 2, delay: .5 }} className={`left ${background && 'Projects_Page_roomsy'}`}>
@@ -192,10 +192,10 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                 <div className='projects'>
                     <motion.div style={{ x }} className='first_project project'>
-                        <div ref={ref1} className={`phone ${background ? "phone_clicked" : ""}`}>
+                        <div className={`phone ${background ? "phone_clicked" : ""}`}>
                             <img src={Roomsy1} alt="" />
                         </div>
-                        <div className={`phone2 ${background ? "phone_clicked" : ""}`}>
+                        <div ref={ref1} className={`phone2 ${background ? "phone_clicked" : ""}`}>
                             <img src={Roomsy2} alt="" />
                         </div>
                     </motion.div>

@@ -57,7 +57,7 @@ function BulletinProject() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.0, delay: 2.8, ease: 'easeInOut' }}
                     >
-                        Buletin is a dynamic and user-friendly web application designed to serve as a versatile platform for blogging and delivering the latest news. <br /> 
+                        Buletin is a dynamic and user-friendly web application designed to serve as a versatile platform for blogging and delivering the latest news. <br />
                         It provides an intuitive interface for bloggers and journalists to create and publish content, including articles, opinion pieces, and news updates.
                     </motion.p>
                     <motion.a href="https://buletin-v2.vercel.app/" target='_blank'
@@ -66,6 +66,16 @@ function BulletinProject() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.0, delay: 2.8, ease: 'easeInOut' }}
                     >Live Demo</motion.a>
+
+                    <motion.div className='accounts'
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1.0, delay: 3, ease: 'easeInOut' }}>
+                        <h3>Use this demo account to sign in</h3>
+                        <h4>Email : demo@gmail.com</h4>
+                        <h4>Password : demodemo</h4>
+                    </motion.div>
+
                 </div>
 
                 <motion.div
