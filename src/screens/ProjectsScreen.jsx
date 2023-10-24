@@ -2,15 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import "./ProjectsScreen.css";
 import { motion, useAnimation, useInView, useScroll, useTransform } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import Roomsy1 from "../assets/mockups/Roomsy-Mockup1.png";
-import Roomsy2 from "../assets/mockups/Roomsy-Mockup2.png";
-import Buletin1 from "../assets/mockups/BuletinMockup1.png";
-import Buletin2 from "../assets/mockups/BuletinMockup2.png";
-import foodwine1 from "../assets/mockups/foodwinemockup1.png";
-import foodwine2 from "../assets/mockups/foodwinemockup2.png";
-import social1 from "../assets/mockups/SocialMockup1.png";
-import social2 from "../assets/mockups/SocialMockup2.png";
-
 
 
 function ProjectsScreen({ textEnter, textLeave }) {
@@ -202,28 +193,28 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                     <motion.div className='second_project project'>
                         <div className={`phone ${background ? "phone_clicked" : ""}`}>
-                            <img src={Buletin1} alt="" />
+                            <img src="https://ucarecdn.com/971aaa4b-a646-4f36-bf49-caa57bd6f3e0/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
                         </div>
                         <div ref={ref2} className={`phone2 ${background ? "phone_clicked" : ""}`}>
-                            <img src={Buletin2} alt="" />
+                            <img src="https://ucarecdn.com/5e523c0a-d74a-4f74-8e36-94684f503b43/-/preview/1000x1000/-/quality/smart/-/format/auto/"alt="" />
                         </div>
                     </motion.div>
 
                     <motion.div className='third_project project'>
                         <div className={`phone ${background ? "phone_clicked" : ""}`}>
-                            <img src={foodwine1} alt="" />
+                            <img src="https://ucarecdn.com/27f14f35-405a-414e-acc7-6ab8168c371d/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
                         </div>
                         <div ref={ref3} className={`phone2 ${background ? "phone_clicked" : ""}`}>
-                            <img src={foodwine2} alt="" />
+                            <img src="https://ucarecdn.com/732114b0-3246-42ce-bd34-6773d33d7c5b/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
                         </div>
                     </motion.div>
 
                     <motion.div className='third_project project'>
                         <div className={`phone ${background ? "phone_clicked" : ""}`}>
-                            <img src={social1} alt="" />
+                            <img src="https://ucarecdn.com/760c25f0-5758-4a06-87e7-f321a85750b4/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
                         </div>
                         <div ref={ref4} className={`phone2 ${background ? "phone_clicked" : ""}`}>
-                            <img src={social2} alt="" />
+                            <img src="https://ucarecdn.com/3df849ab-bbb9-4298-a56a-ef024a781e01/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
                         </div>
                     </motion.div>
                 </div>

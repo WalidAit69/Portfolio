@@ -93,6 +93,14 @@
     max-width: 600px;
 }
 
+.foodwine-desc{
+    background-color: transparent !important;
+}
+
+.foodwinereadmore{
+    background-color: transparent !important;
+}
+
 .readmore {
     display: inline-block;
     margin-top: 80px;

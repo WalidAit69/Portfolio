@@ -2,9 +2,7 @@ import React, { useEffect } from 'react';
 import "./Projects.css";
 import "./Bulletin.css";
 import { motion, useAnimation } from 'framer-motion';
-import screen1 from "../assets/screenshots/BuletinScreenshot1.png";
-import screen2 from "../assets/screenshots/BuletinScreenshot2.png";
-import screen3 from "../assets/screenshots/BuletinScreenshot3.png";
+
 
 function BulletinProject() {
 
@@ -84,7 +82,7 @@ function BulletinProject() {
                     animate={{ width: "450px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >
-                    <img src={screen1} alt="" />
+                    <img src={"https://ucarecdn.com/763f4f6e-f2a5-4a2d-a2da-a3e8154c7c6b/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
                 </motion.div>
 
                 <motion.div
@@ -92,7 +90,7 @@ function BulletinProject() {
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >
-                    <img src={screen2} alt="" />
+                    <img src={"https://ucarecdn.com/e4dbe56c-bd0a-4ff4-abad-1e099517611c/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
                 </motion.div>
 
                 <motion.div
@@ -100,7 +98,7 @@ function BulletinProject() {
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >
-                    <img src={screen3} alt="" />
+                    <img src={"https://ucarecdn.com/d9e43e54-ed65-4523-bb96-d735dce74768/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
                 </motion.div>
 
             </div>

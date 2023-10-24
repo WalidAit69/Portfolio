@@ -2,10 +2,6 @@ import React, { useEffect } from 'react';
 import "./Projects.css";
 import "./Bulletin.css";
 import { motion, useAnimation } from 'framer-motion';
-import screen1 from "../assets/screenshots/foodwine-screen1.png";
-import screen2 from "../assets/screenshots/foodwine-screen2.png";
-import screen3 from "../assets/screenshots/foodwine-screen3.png";
-
 
 function FoodWine() {
 
@@ -54,7 +50,7 @@ function FoodWine() {
                         Food&Wine
                     </motion.h1>
                     <motion.p
-                        class="desc"
+                        class="desc foodwine-desc"
                         style={{ color: "black" }}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -85,7 +81,7 @@ function FoodWine() {
                     animate={{ width: "450px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >
-                    <img src={screen1} alt="" />
+                    <img src={"https://ucarecdn.com/6957df82-028e-4d73-952e-58382086218c/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
                 </motion.div>
 
                 <motion.div
@@ -93,7 +89,7 @@ function FoodWine() {
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >
-                    <img src={screen2} alt="" />
+                    <img src={"https://ucarecdn.com/7fba96e3-dfd3-47a2-b85b-84acf18e348b/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
                 </motion.div>
 
                 <motion.div
@@ -101,7 +97,7 @@ function FoodWine() {
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >
-                    <img src={screen3} alt="" />
+                    <img src={"https://ucarecdn.com/620aac12-8f45-4a14-a5c0-836c8f6e4ec9/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
                 </motion.div>
 
             </div>

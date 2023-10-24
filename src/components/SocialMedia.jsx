@@ -2,9 +2,6 @@ import React, { useEffect } from 'react';
 import "./Projects.css";
 import "./Bulletin.css";
 import { motion, useAnimation } from 'framer-motion';
-import screen1 from "../assets/screenshots/SocialScreen1.png";
-import screen2 from "../assets/screenshots/SocialScreen2.png";
-import screen3 from "../assets/screenshots/SocialScreen3.png";
 
 
 function SocialMedia() {
@@ -84,7 +81,7 @@ function SocialMedia() {
                     animate={{ width: "450px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >
-                    <img src={screen1} alt="" />
+                    <img src={"https://ucarecdn.com/b1a02aa5-54ac-4e00-823d-8a18e24a187c/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
                 </motion.div>
 
                 <motion.div
@@ -92,7 +89,7 @@ function SocialMedia() {
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >
-                    <img src={screen2} alt="" />
+                    <img src={"https://ucarecdn.com/83ff556a-00be-4c7b-9d55-ae0d51e1ec75/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
                 </motion.div>
 
                 <motion.div
@@ -100,7 +97,7 @@ function SocialMedia() {
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >
-                    <img src={screen3} alt="" />
+                    <img src={"https://ucarecdn.com/8b049f00-4fc1-4fb0-86a7-0a834512d7b1/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
                 </motion.div>
 
             </div>

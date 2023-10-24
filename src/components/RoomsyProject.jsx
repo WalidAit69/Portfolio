@@ -2,9 +2,7 @@ import React, { useEffect } from 'react';
 import "./Projects.css";
 import "./Bulletin.css";
 import { motion, useAnimation } from 'framer-motion';
-import screen1 from "../assets/screenshots/roomsyscreen1.png"
-import screen2 from "../assets/screenshots/roomsyscreen2.png"
-import screen3 from "../assets/screenshots/roomsyscreen3.png"
+
 
 function RoomsyProject() {
 
@@ -82,7 +80,7 @@ function RoomsyProject() {
           animate={{ width: "450px" }}
           transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
         >
-          <img src={screen1} alt="" />
+          <img src="https://ucarecdn.com/5a7ad0be-bf7a-4c63-9013-6fb3e8f4c17e/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
         </motion.div>
 
         <motion.div
@@ -90,7 +88,7 @@ function RoomsyProject() {
           animate={{ width: "300px" }}
           transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
         >
-          <img src={screen2} alt="" />
+          <img src={"https://ucarecdn.com/ff88663b-ac7d-4895-b384-039769df0823/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
         </motion.div>
 
         <motion.div
@@ -98,7 +96,7 @@ function RoomsyProject() {
           animate={{ width: "300px" }}
           transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
         >
-          <img src={screen3} alt="" />
+          <img src={"https://ucarecdn.com/feb5fbce-8cd3-4aac-82d0-7a99f983719c/-/preview/1000x1000/-/quality/smart/-/format/auto/"} alt="" />
         </motion.div>
 
       </div>
