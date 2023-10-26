@@ -196,6 +196,33 @@
     height: 95%;
 }
 
+@media (max-height:800px) {
+    .img-2 {
+        top: 150px;
+        height: 300px;
+
+    }
+    
+    .img-3 {
+        bottom: 90px;
+        height: 300px;
+    }
+
+    .text {
+        position: absolute;
+        top: 300px;
+        left: 450px;
+    }
+}
+
+
+@media (max-height:700px) {
+    .text {
+        position: absolute;
+        top: 270px;
+        left: 450px;
+    }
+}
 
 @media (max-width: 900px) {
     .img-1 {
