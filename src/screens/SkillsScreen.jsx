@@ -63,7 +63,7 @@ function SkillsScreen() {
                         {isref2Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className="skill">
                             <ul>
                                 <motion.li variants={{ test: { x: -50 }, test1: { x: 0 } }} initial="test" animate={mainControls} transition={{ duration: 1, delay: .5 }}>Node js</motion.li>
-                                <motion.li variants={{ test: { x: -50 }, test1: { x: 0 } }} initial="test" animate={mainControls} transition={{ duration: 1, delay: .7 }}>Express</motion.li>
+                                <motion.li variants={{ test: { x: -50 }, test1: { x: 0 } }} initial="test" animate={mainControls} transition={{ duration: 1, delay: .7 }}>Express js</motion.li>
                                 <motion.li variants={{ test: { x: -50 }, test1: { x: 0 } }} initial="test" animate={mainControls} transition={{ duration: 1, delay: .9 }}>Prisma</motion.li>
                             </ul>
                         </motion.div>}
