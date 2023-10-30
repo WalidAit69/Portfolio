@@ -86,6 +86,7 @@ function FoodWine() {
 
                 <motion.div
                     class="img-2"
+                    initial={{ width: 0 }}
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >
@@ -94,6 +95,7 @@ function FoodWine() {
 
                 <motion.div
                     class="img-3"
+                    initial={{ width: 0 }}
                     animate={{ width: "300px" }}
                     transition={{ duration: 1.0, delay: 2.2, ease: 'easeInOut' }}
                 >

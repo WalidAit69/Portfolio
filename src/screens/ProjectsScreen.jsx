@@ -20,6 +20,9 @@ function ProjectsScreen({ textEnter, textLeave }) {
     const ref4 = useRef(null);
     const isref4Inview = useInView(ref4);
 
+    const ref5 = useRef(null);
+    const isref5Inview = useInView(ref5);
+
     const mainControls = useAnimation();
 
     useEffect(() => {
@@ -35,14 +38,17 @@ function ProjectsScreen({ textEnter, textLeave }) {
         if (isref4Inview) {
             mainControls.start("visible")
         }
+        if (isref5Inview) {
+            mainControls.start("visible")
+        }
 
-    }, [isref1Inview, isref2Inview, isref3Inview, isref4Inview])
+    }, [isref1Inview, isref2Inview, isref3Inview, isref4Inview , isref5Inview])
 
-    const letters = "ABCDEFGHJKLMNOPQRSTUVWXYZ"
     const [randomText1, setRandomText1] = useState("");
     const [randomText2, setRandomText2] = useState("");
     const [randomText3, setRandomText3] = useState("");
     const [randomText4, setRandomText4] = useState("");
+    const [randomText5, setRandomText5] = useState("");
 
     const [background, setbackground] = useState(false);
 
@@ -95,6 +101,12 @@ function ProjectsScreen({ textEnter, textLeave }) {
                 document.body.style.overflowY = 'auto';
             }, 1500)
         }
+        if (e === "betterai") {
+            setTimeout(() => {
+                navigate('/projects/betterai')
+                document.body.style.overflowY = 'auto';
+            }, 1500)
+        }
     }
 
     const { scrollYProgress } = useScroll();
@@ -143,13 +155,32 @@ function ProjectsScreen({ textEnter, textLeave }) {
                     <h3>Web App</h3>
                 </motion.div>}
 
-                {isref3Inview && <div className={`layer3 ${background && "layer3clicked"}`}></div>}
-                {isref3Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className='left'>
+                {isref5Inview && <div className={`layer5 ${background && "layer5clicked"}`}></div>}
+                {isref5Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className={`left ${background && 'Projects_Page_betterai'}`}>
                     <h4>03</h4>
 
                     <div className='project_info'>
                         <div className='project_name_arrow'>
-                            <h1 onClick={(e)=>handleClick("Food&Wine")} className='project_name foodwine' onMouseOver={() => randomizeText("FoodWine", setRandomText3)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText3 || 'Food&Wine'}</h1>
+                            <h1 onClick={(e)=>handleClick("betterai")} className='project_name foodwine' onMouseOver={() => randomizeText("Better AI", setRandomText3)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText3 || 'Better AI'}</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+
+                        </div>
+                        <h2>Full-Stack • <span> Next js / Prisma</span></h2>
+                        <p>Better AI is a versatile web application powered by advanced artificial intelligence technology. It empowers users to effortlessly create images, videos, sounds, code, and engage in natural conversations.</p>
+                    </div>
+
+                    <h3>Web App</h3>
+                </motion.div>}
+
+                {isref3Inview && <div className={`layer3 ${background && "layer3clicked"}`}></div>}
+                {isref3Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className='left'>
+                    <h4>04</h4>
+
+                    <div className='project_info'>
+                        <div className='project_name_arrow'>
+                            <h1 onClick={(e)=>handleClick("Food&Wine")} className='project_name foodwine' onMouseOver={() => randomizeText("FoodWine", setRandomText4)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText4 || 'Food&Wine'}</h1>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
@@ -164,11 +195,11 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                 {isref4Inview && <div className={`layer4 ${background && "layer4clicked"}`}></div>}
                 {isref4Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className={`left ${background && 'Projects_Page_socialmedia'}`}>
-                    <h4>04</h4>
+                    <h4>05</h4>
 
                     <div className='project_info'>
                         <div className='project_name_arrow'>
-                            <h1 onClick={(e)=>handleClick("socialmedia")} className='project_name socialmedia' onMouseOver={() => randomizeText("SocialMedia", setRandomText4)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText4 || 'SocialMedia'}</h1>
+                            <h1 onClick={(e)=>handleClick("socialmedia")} className='project_name socialmedia' onMouseOver={() => randomizeText("SocialMedia", setRandomText5)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText5 || 'SocialMedia'}</h1>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
@@ -197,6 +228,15 @@ function ProjectsScreen({ textEnter, textLeave }) {
                         </div>
                         <div ref={ref2} className={`phone2 ${background ? "phone_clicked" : ""}`}>
                             <img src="https://ucarecdn.com/5e523c0a-d74a-4f74-8e36-94684f503b43/-/preview/1000x1000/-/quality/smart/-/format/auto/"alt="" />
+                        </div>
+                    </motion.div>
+
+                    <motion.div className='third_project project'>
+                        <div className={`phone ${background ? "phone_clicked" : ""}`}>
+                            <img src="https://ucarecdn.com/67ac7a47-0e4c-4f3b-9ad3-7c8876891e16/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
+                        </div>
+                        <div ref={ref5} className={`phone2 ${background ? "phone_clicked" : ""}`}>
+                            <img src="https://ucarecdn.com/a2f99da7-277f-4c56-bba2-c631515e65d3/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
                         </div>
                     </motion.div>
 

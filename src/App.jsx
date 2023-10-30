@@ -6,6 +6,7 @@ import BulletinProject from './components/BulletinProject';
 import FoodWine from './components/FoodWine';
 import { useEffect } from 'react';
 import SocialMedia from './components/SocialMedia';
+import Betterai from './components/Betterai';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/projects/Buletin" element={<BulletinProject></BulletinProject>} />
           <Route path="/projects/Food&Wine" element={<FoodWine></FoodWine>} />
           <Route path="/projects/socialmedia" element={<SocialMedia></SocialMedia>} />
+          <Route path="/projects/betterai" element={<Betterai></Betterai>} />
         </Routes>
       </BrowserRouter>
     </>

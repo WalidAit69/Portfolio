@@ -60,7 +60,7 @@
     position: absolute;
     background-color: black;
     width: 100%;
-    height: 420vh;
+    height: 820vh;
     left: 0;
     mix-blend-mode: color;
     animation: expand 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
@@ -70,7 +70,7 @@
     position: absolute;
     background-color: black;
     width: 100%;
-    height: 420vh;
+    height: 820vh;
     right: 0;
     mix-blend-mode: normal;
     animation: expand2 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
@@ -96,6 +96,25 @@
     animation: expand2 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
+.Projects_Page .layer5 {
+    position: absolute;
+    background-color: #948576;
+    width: 100%;
+    height: 420vh;
+    left: 0;
+    mix-blend-mode: color;
+    animation: expand 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.Projects_Page .layer5clicked {
+    position: absolute;
+    background-color: #948576;
+    width: 100%;
+    height: 420vh;
+    right: 0;
+    mix-blend-mode: normal;
+    animation: expand2 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
 
 .left {
     display: flex;
@@ -311,6 +330,9 @@ body {
     color: #44d62c;
 }
 
+.Projects_Page_betterai{
+    color: #948576;
+}
 
 @media (max-width:1700px) {
     .project {
