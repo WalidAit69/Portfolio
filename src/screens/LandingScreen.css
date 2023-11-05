@@ -49,6 +49,10 @@
     mix-blend-mode: color-burn;
 }
 
+.third-block {
+    -webkit-mix-blend-mode: color-burn;
+}
+
 @keyframes expandNow {
     0% {
         width: 0%;
