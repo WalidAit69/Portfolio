@@ -42,7 +42,7 @@ function ProjectsScreen({ textEnter, textLeave }) {
             mainControls.start("visible")
         }
 
-    }, [isref1Inview, isref2Inview, isref3Inview, isref4Inview , isref5Inview])
+    }, [isref1Inview, isref2Inview, isref3Inview, isref4Inview, isref5Inview])
 
     const [randomText1, setRandomText1] = useState("");
     const [randomText2, setRandomText2] = useState("");
@@ -89,9 +89,9 @@ function ProjectsScreen({ textEnter, textLeave }) {
                 document.body.style.overflowY = 'auto';
             }, 1500)
         }
-        if (e === "Food&Wine") {
+        if (e === "AIChat") {
             setTimeout(() => {
-                navigate('/projects/Food&Wine')
+                navigate('/projects/AIChat')
                 document.body.style.overflowY = 'auto';
             }, 1500)
         }
@@ -122,7 +122,7 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                     <div className='project_info'>
                         <div className='project_name_arrow'>
-                            <h1 onClick={(e)=>handleClick("Roomsy")} className='project_name' onMouseOver={() => randomizeText("roomsy", setRandomText1)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText1 || "roomsy"}</h1>
+                            <h1 onClick={(e) => handleClick("Roomsy")} className='project_name' onMouseOver={() => randomizeText("roomsy", setRandomText1)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText1 || "roomsy"}</h1>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
@@ -138,11 +138,11 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                 {isref2Inview && <div className={`layer2 ${background ? 'layer2clicked' : ''}`} ></div>}
                 {isref2Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className={`left ${background && 'Projects_Page_bulettin'}`}>
-                    <h4>02</h4>
+                    <h4>03</h4>
 
                     <div className='project_info'>
                         <div className='project_name_arrow'>
-                            <h1 onClick={(e)=>handleClick("Buletin")} className='project_name' onMouseOver={() => randomizeText("Buletin", setRandomText2)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText2 || "Buletin"}</h1>
+                            <h1 onClick={(e) => handleClick("Buletin")} className='project_name' onMouseOver={() => randomizeText("Buletin", setRandomText2)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText2 || "Buletin"}</h1>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
@@ -157,11 +157,11 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                 {isref5Inview && <div className={`layer5 ${background && "layer5clicked"}`}></div>}
                 {isref5Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className={`left ${background && 'Projects_Page_betterai'}`}>
-                    <h4>03</h4>
+                    <h4>04</h4>
 
                     <div className='project_info'>
                         <div className='project_name_arrow'>
-                            <h1 onClick={(e)=>handleClick("betterai")} className='project_name foodwine' onMouseOver={() => randomizeText("Better AI", setRandomText3)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText3 || 'Better AI'}</h1>
+                            <h1 onClick={(e) => handleClick("betterai")} className='project_name foodwine' onMouseOver={() => randomizeText("Better AI", setRandomText3)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText3 || 'Better AI'}</h1>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
@@ -176,18 +176,18 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                 {isref3Inview && <div className={`layer3 ${background && "layer3clicked"}`}></div>}
                 {isref3Inview && <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} initial="hidden" animate={mainControls} transition={{ duration: .5, delay: .5 }} className='left'>
-                    <h4>04</h4>
+                    <h4>02</h4>
 
                     <div className='project_info'>
                         <div className='project_name_arrow'>
-                            <h1 onClick={(e)=>handleClick("Food&Wine")} className='project_name foodwine' onMouseOver={() => randomizeText("FoodWine", setRandomText4)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText4 || 'Food&Wine'}</h1>
+                            <h1 onClick={(e) => handleClick("AIChat")} className='project_name' onMouseOver={() => randomizeText("AI Chat", setRandomText4)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText4 || 'AI Chat'}</h1>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
 
                         </div>
-                        <h2>Full-Stack • <span> React js / node js</span></h2>
-                        <p>FOOD&WINE is a cutting-edge culinary platform that brings together the best of food and wine.</p>
+                        <h2>Full-Stack • <span> Next js / Firebase</span></h2>
+                        <p>AI Chat is a web-based chat application powered by advanced artificial intelligence technology. It seamlessly translates messages in real-time.</p>
                     </div>
 
                     <h3>Web App</h3>
@@ -199,7 +199,7 @@ function ProjectsScreen({ textEnter, textLeave }) {
 
                     <div className='project_info'>
                         <div className='project_name_arrow'>
-                            <h1 onClick={(e)=>handleClick("socialmedia")} className='project_name socialmedia' onMouseOver={() => randomizeText("SocialMedia", setRandomText5)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText5 || 'SocialMedia'}</h1>
+                            <h1 onClick={(e) => handleClick("socialmedia")} className='project_name socialmedia' onMouseOver={() => randomizeText("SocialMedia", setRandomText5)} onMouseEnter={textEnter} onMouseLeave={textLeave}>{randomText5 || 'SocialMedia'}</h1>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
@@ -222,12 +222,21 @@ function ProjectsScreen({ textEnter, textLeave }) {
                         </div>
                     </motion.div>
 
+                    <motion.div className='third_project project'>
+                        <div className={`phone ${background ? "phone_clicked" : ""}`}>
+                            <img src="https://ucarecdn.com/2076fdb5-5e33-4596-9b69-8439aff8567c/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
+                        </div>
+                        <div ref={ref3} className={`phone2 ${background ? "phone_clicked" : ""}`}>
+                            <img src="https://ucarecdn.com/8d6e20a9-25d0-4643-b123-ee490cdae28b/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
+                        </div>
+                    </motion.div>
+
                     <motion.div className='second_project project'>
                         <div className={`phone ${background ? "phone_clicked" : ""}`}>
                             <img src="https://ucarecdn.com/971aaa4b-a646-4f36-bf49-caa57bd6f3e0/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
                         </div>
                         <div ref={ref2} className={`phone2 ${background ? "phone_clicked" : ""}`}>
-                            <img src="https://ucarecdn.com/5e523c0a-d74a-4f74-8e36-94684f503b43/-/preview/1000x1000/-/quality/smart/-/format/auto/"alt="" />
+                            <img src="https://ucarecdn.com/5e523c0a-d74a-4f74-8e36-94684f503b43/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
                         </div>
                     </motion.div>
 
@@ -237,15 +246,6 @@ function ProjectsScreen({ textEnter, textLeave }) {
                         </div>
                         <div ref={ref5} className={`phone2 ${background ? "phone_clicked" : ""}`}>
                             <img src="https://ucarecdn.com/a2f99da7-277f-4c56-bba2-c631515e65d3/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
-                        </div>
-                    </motion.div>
-
-                    <motion.div className='third_project project'>
-                        <div className={`phone ${background ? "phone_clicked" : ""}`}>
-                            <img src="https://ucarecdn.com/27f14f35-405a-414e-acc7-6ab8168c371d/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
-                        </div>
-                        <div ref={ref3} className={`phone2 ${background ? "phone_clicked" : ""}`}>
-                            <img src="https://ucarecdn.com/732114b0-3246-42ce-bd34-6773d33d7c5b/-/preview/1000x1000/-/quality/smart/-/format/auto/" alt="" />
                         </div>
                     </motion.div>
 
