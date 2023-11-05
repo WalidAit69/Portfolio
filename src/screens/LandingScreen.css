@@ -49,9 +49,7 @@
     mix-blend-mode: color-burn;
 }
 
-.third-block {
-    -webkit-mix-blend-mode: color-burn;
-}
+
 
 @keyframes expandNow {
     0% {
@@ -138,6 +136,7 @@
     .AboutScreen h2 {
         font-weight: 400;
         font-size: 1.1rem;
+        left: 30%;
     }
 
 }

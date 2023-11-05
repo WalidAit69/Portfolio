@@ -89,6 +89,14 @@
     .ContactScreen h1 {
         font-size: 5rem;
         top: 27%;
-        left: 5%;
+        left: 10%;
+    }
+    
+    .ContactScreen .socials div {
+        gap: 1rem;
+    }
+    
+    .socials img {
+        width: 40px;
     }
 }
